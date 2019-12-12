@@ -1,0 +1,158 @@
+html{
+    background-color: rgb(233, 247, 234);
+}
+
+body{
+    font-family:'Ubuntu',sans-serif;
+}
+
+main{
+    width:unset;
+}
+
+h1{
+    background-color: rgb(178, 183, 179);
+    font-size: 6em;
+    position: fixed;
+    z-index: 2;
+    width: 99%;
+    margin-top: -125px;
+    box-shadow: 0px 10px 16px rgb(2,2,2);
+    animation-name: example;
+    animation-duration:5s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@keyframes example {
+    0% {left:100%;}
+    20% {left:100%}
+    100% {left:0%;}
+}
+
+h2{
+    font-style:italic;
+    text-decoration:underline;
+}
+
+section {
+    background-color:rgb(219, 232, 220);
+    margin-top:124px;
+    padding-top:14px
+}
+
+ul {
+    display:flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap:wrap;
+}
+
+h3,img,p{
+    width:19vw;
+}
+
+p{
+    height: 15vh;
+    overflow: scroll;   
+}
+
+img{
+    box-shadow: 6px 10px 15px 0px rgb(2, 2, 2);
+    background-color:white;
+}
+
+@media only screen and (min-width:1024px){  
+    li:first-child img{
+        height:330px;
+    }
+    li:first-child h3,li:first-child img,li:first-child p{
+        width:43vw;
+    }  
+    li:first-child{
+        width:48vw;
+        margin-bottom:-25px;
+    }
+    .grid-item{
+        width:24vw;
+        margin-bottom:25px;
+    }
+}
+
+@media only screen and (min-width:720px) and (max-width:1023px){
+    li:first-child h3,li:first-child img,li:first-child p{
+        width:43vw;
+    }
+    li:nth-child(2) h3,li:nth-child(2) img,li:nth-child(2) p{
+        width:43vw;
+    }
+    li:first-child{
+        width:48vw;
+        margin-bottom:-25px;
+    }
+    li:nth-child(2){
+        width:48vw;
+        margin-bottom:-25px;
+    }
+    .grid-item{
+        width:31vw;
+        margin-bottom:20px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:719px){
+    li:first-child h3,li:first-child img,li:first-child p{
+        width:67vw;
+    }
+    li:first-child{
+        width:50vw;
+        margin-bottom:-25px;
+    }
+    .grid-item{
+        width:48vw;
+        margin-bottom:25px;
+    }
+    p,h3{
+        font-size:0.9em;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:399px){
+    li:first-child h3,li:first-child img,li:first-child p{
+        width:67vw;
+    }
+    li:first-child{
+        width:50vw;
+        margin-bottom:-25px;
+    }
+    .grid-item{
+        width:46vw;
+        margin-bottom:25px;
+    }
+    p,h3{
+        font-size:0.7em;
+    }
+}
+
+@media only screen and (max-width:200px){
+    li:first-child h3,li:first-child img,li:first-child p{
+        width:67vw;
+    }
+    li:first-child{
+        width:50vw;
+        margin-bottom:15px;
+    }
+    .grid-item{
+        width:44vw;
+        margin-bottom:25px;
+    }
+    p,h3{
+        font-size:0.7em;
+    }
+}
+
+@media only screen and (max-height:650px){
+    p{
+        height:25vh;
+    }
+}
